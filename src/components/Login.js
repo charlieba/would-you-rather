@@ -33,7 +33,7 @@ class Login extends Component {
 			<Row className="justify-content-center align-items-center min-vh-100">
 				<Col xs={12} md={4}>
 					<Card bg="secondary" className="text-center">
-						<Card.Header bg="#0074FF" >Login</Card.Header>
+						<Card.Header>Login</Card.Header>
 						<Card.Body>
 							<Form onSubmit={this.handleSubmit}>
 								<Form.Group controlId="formGridState">

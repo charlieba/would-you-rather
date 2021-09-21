@@ -16,7 +16,7 @@ function NavigationBar(props) {
 
 	return (
 		<Fragment>
-			<Navbar expand="lg" bg="light" variant="light" className="my-3 border">
+			<Navbar expand="lg" bg="secondary" variant="primary" className="my-3 border">
 				<Navbar.Brand as={Link} to="/">
 					<h2>
 						<small>Would You Rather?</small>
@@ -39,7 +39,7 @@ function NavigationBar(props) {
 						<Navbar.Text>{user.name}</Navbar.Text>
 						<Avatar avatarURL={user.avatarURL} className="mx-3" />
 						<Button
-							variant="outline-dark"
+							variant="primary"
 							onClick={handleLogout}
 							className="mt-3 mt-lg-0"
 						>

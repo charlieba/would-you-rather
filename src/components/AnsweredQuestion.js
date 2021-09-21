@@ -25,7 +25,7 @@ class AnsweredQuestion extends Component {
 		return (
 			<Row className="justify-content-center">
 				<Col xs={12} md={6}>
-					<Card bg="light" className="m-3">
+					<Card bg="secondary" className="m-3">
 						<Card.Header>
 							<Avatar avatarURL={avatarURL} className="mr-2" />
 							{name} asks:
