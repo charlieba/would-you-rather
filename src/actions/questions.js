@@ -1,27 +1,27 @@
 import { saveQuestion, saveQuestionAnswer } from '../utils/api';
 import { showLoading, hideLoading } from 'react-redux-loading-bar';
 
-export const RECEIVE_QUESTIONS = 'RECEIVE_QUESTIONS';
-export const ADD_QUESTION = 'ADD_QUESTION';
-export const ADD_ANSWER = 'ADD_ANSWER';
+export const GET_QUESTION = 'GET_QUESTION';
+export const SET_QUESTION = 'ADD_QUESTION';
+export const SET_ANSWER = 'ADD_ANSWER';
 
 export function receiveQuestions(questions) {
 	return {
-		type: RECEIVE_QUESTIONS,
+		type: GET_QUESTION,
 		questions
 	};
 }
 
 function addQuestion(question) {
 	return {
-		type: ADD_QUESTION,
+		type: SET_QUESTION,
 		question
 	};
 }
 
 function addAnswer({ qid, answer, authedUser }) {
 	return {
-		type: ADD_ANSWER,
+		type: SET_ANSWER,
 		answerInfo: {
 			qid,
 			answer,

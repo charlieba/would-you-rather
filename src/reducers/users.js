@@ -1,5 +1,5 @@
 import { RECEIVE_USERS } from '../actions/users';
-import { ADD_QUESTION, ADD_ANSWER } from '../actions/questions';
+import { SET_QUESTION, SET_ANSWER } from '../actions/questions';
 
 export default function users(state = {}, action) {
 	switch (action.type) {
@@ -9,7 +9,7 @@ export default function users(state = {}, action) {
 				...action.users
 			};
 
-		case ADD_QUESTION:
+		case SET_QUESTION:
 			return {
 				...state,
 				[action.question.author]: {
@@ -20,7 +20,7 @@ export default function users(state = {}, action) {
 				}
 			};
 
-		case ADD_ANSWER:
+		case SET_ANSWER:
 			const { qid, answer, authedUser } = action.answerInfo;
 
 			return {
