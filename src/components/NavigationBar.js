@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
 import { reSetAuthedUser } from '../actions/authedUser';
-import Avatar from './Avatar';
+import Avatar from './UserIcon';
 
 function NavigationBar(props) {
 	const { user, dispatch } = props;

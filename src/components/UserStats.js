@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Avatar from './Avatar';
+import Avatar from './UserIcon';
 
 class UserStats extends Component {
 	render() {

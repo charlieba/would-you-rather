@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import UnansweredQuestion from './UnansweredQuestion';
-import AnsweredQuestion from './AnsweredQuestion';
+import AnswerDescription from './AnswerDescription';
 
 class QuestionPage extends Component {
 	render() {
@@ -14,7 +14,7 @@ class QuestionPage extends Component {
 				<h2 className="text-center my-3">
 					<small>Would You Rather...</small>
 				</h2>
-				{answered ? <AnsweredQuestion id={id} /> : <UnansweredQuestion id={id} />}
+				{answered ? <AnswerDescription id={id} /> : <UnansweredQuestion id={id} />}
 			</Fragment>
 		);
 	}

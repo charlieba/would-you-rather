@@ -8,7 +8,7 @@ import Button from 'react-bootstrap/Button';
 import { handleAddAnswer } from '../actions/questions';
 import { formatDate } from '../utils/helpers';
 import PageNotFound from './PageNotFound';
-import Avatar from './Avatar';
+import Avatar from './UserIcon';
 
 class UnansweredQuestion extends Component {
 	state = {

@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import { formatDate } from '../utils/helpers';
-import Avatar from './Avatar';
+import Avatar from './UserIcon';
 
 class BriefQuestion extends Component {
 	render() {
