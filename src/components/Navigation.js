@@ -20,7 +20,7 @@ class Navigation extends Component {
 							<Route path="/" exact component={Home} />
 							<Route path="/questions/:id" component={QuestionPage} />
 							<Route path="/add" component={NewQuestion} />
-							<Route path="/PositionTable" component={PositionTable} />
+							<Route path="/leaderboard" component={PositionTable} />
 							<Route component={PageNotFound} />
 						</Switch>
 					</main>
