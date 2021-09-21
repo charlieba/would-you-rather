@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Avatar from './UserIcon';
 
-class UserStats extends Component {
+class Score extends Component {
 	render() {
 		const { user } = this.props;
 		const { name, avatarURL, answers, questions } = user;
@@ -41,4 +41,4 @@ function mapStateToProps({ users }, { id }) {
 	};
 }
 
-export default connect(mapStateToProps)(UserStats);
+export default connect(mapStateToProps)(Score);

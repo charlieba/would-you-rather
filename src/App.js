@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import Spinner from 'react-bootstrap/Spinner';
 import Login from './components/Login';
-import PrivateApp from './components/PrivateApp';
+import Navigation from './components/Navigation';
 import { handleInitialData } from './actions/shared';
 
 class App extends Component {
@@ -28,7 +28,7 @@ class App extends Component {
 				</div>
 			);
 		} else {
-			return <Fragment>{!authedUser ? <Login /> : <PrivateApp />}</Fragment>;
+			return <Fragment>{!authedUser ? <Login /> : <Navigation />}</Fragment>;
 		}
 	}
 }

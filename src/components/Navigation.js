@@ -6,10 +6,10 @@ import NavigationBar from './NavigationBar';
 import Home from './Home';
 import NewQuestion from './NewQuestion';
 import QuestionPage from './QuestionPage';
-import LeaderBoard from './LeaderBoard';
+import PositionTable from './PositionTable';
 import PageNotFound from './PageNotFound';
 
-class PrivateApp extends Component {
+class Navigation extends Component {
 	render() {
 		return (
 			<Router>
@@ -20,7 +20,7 @@ class PrivateApp extends Component {
 							<Route path="/" exact component={Home} />
 							<Route path="/questions/:id" component={QuestionPage} />
 							<Route path="/add" component={NewQuestion} />
-							<Route path="/leaderboard" component={LeaderBoard} />
+							<Route path="/PositionTable" component={PositionTable} />
 							<Route component={PageNotFound} />
 						</Switch>
 					</main>
@@ -30,4 +30,4 @@ class PrivateApp extends Component {
 	}
 }
 
-export default PrivateApp;
+export default Navigation;

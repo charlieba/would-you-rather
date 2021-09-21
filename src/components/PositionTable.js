@@ -1,8 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
-import UserStats from './UserStats';
+import Score from './Score';
 
-class LeaderBoard extends Component {
+class PositionTable extends Component {
 	render() {
 		return (
 			<Fragment>
@@ -10,7 +10,7 @@ class LeaderBoard extends Component {
 					<small>LeaderBoard</small>
 				</h2>
 				{this.props.userIDs.map((id) => (
-					<UserStats key={id} id={id} />
+					<Score key={id} id={id} />
 				))}
 			</Fragment>
 		);
@@ -33,4 +33,4 @@ function mapStateToProps({ users }) {
 	};
 }
 
-export default connect(mapStateToProps)(LeaderBoard);
+export default connect(mapStateToProps)(PositionTable);

@@ -25,7 +25,7 @@ class BriefQuestion extends Component {
 						<Card.Body className="text-center">
 							<Card.Text>{optionOne.text.slice(0, 50)}...?</Card.Text>
 							<Link to={`/questions/${id}`}>
-								<Button variant="primary">View Question</Button>
+								<Button variant="primary">Check Question</Button>
 							</Link>
 						</Card.Body>
 						<Card.Footer>
