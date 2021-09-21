@@ -18,9 +18,11 @@ class AnswerDescription extends Component {
 
 		const { optionOne, optionTwo, timestamp } = question;
 		const { name, avatarURL } = author;
-		const totalVotes = optionOne.votes.length + optionTwo.votes.length;
-		const optionOnePercent = Math.round((optionOne.votes.length / totalVotes) * 100);
-		const optionTwoPercent = Math.round((optionTwo.votes.length / totalVotes) * 100);
+		const total = optionOne.votes.length + optionTwo.votes.length;
+		const optionOnePercent = 
+			Math.round((optionOne.votes.length / total) * 100);
+		const optionTwoPercent = 
+			Math.round((optionTwo.votes.length / total) * 100);
 
 		return (
 			<Row className="justify-content-center">
@@ -47,7 +49,7 @@ class AnswerDescription extends Component {
 									variant="info"
 								/>
 								<Card.Text className="text-muted">
-									chosen by {optionOne.votes.length} out of {totalVotes}{' '}
+									chosen by {optionOne.votes.length} out of {total}{' '}
 									users
 								</Card.Text>
 								<li>
@@ -64,7 +66,7 @@ class AnswerDescription extends Component {
 									variant="info"
 								/>
 								<Card.Text className="text-muted">
-									chosen by {optionTwo.votes.length} out of {totalVotes}{' '}
+									chosen by {optionTwo.votes.length} out of {total}{' '}
 									users
 								</Card.Text>
 							</ul>
