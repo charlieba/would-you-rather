@@ -32,16 +32,15 @@ class Login extends Component {
 		return (
 			<Row className="justify-content-center align-items-center min-vh-100">
 				<Col xs={12} md={4}>
-					<Card bg="light" className="text-center">
-						<Card.Header>Login</Card.Header>
+					<Card bg="secondary" className="text-center">
+						<Card.Header bg="#0074FF" >Login</Card.Header>
 						<Card.Body>
 							<Form onSubmit={this.handleSubmit}>
 								<Form.Group controlId="formGridState">
-									<Form.Label>Username</Form.Label>
+									<Form.Label>User</Form.Label>
 									{errorMsg ? (
 										<p className="text-danger">{errorMsg}</p>
 									) : null}
-
 									<Form.Control
 										as="select"
 										ref={(id) => (this.userID = id)}
@@ -54,8 +53,7 @@ class Login extends Component {
 										))}
 									</Form.Control>
 								</Form.Group>
-
-								<Button type="submit" variant="outline-dark">
+								<Button type="submit" variant="primary">
 									Login
 								</Button>
 							</Form>
